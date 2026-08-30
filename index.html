@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Stuckey — how the AI stack runs the company</title>
+  <meta name="description" content="A scroll-through of how Stuckey uses AI specialists, skills, and tools to run the MGA, CoverCore, and StudioGuard." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root, .sw-root {
+      --sw-bg: #F5EDE0;
+      --sw-ink: #0a2a43;
+      --sw-ink-soft: #475569;
+      --sw-accent: #e3ab4f;
+      --sw-font-display: "Fraunces", Georgia, serif;
+      --sw-font-body: "Source Sans 3", system-ui, sans-serif;
+    }
+    html, body { margin: 0; background: var(--sw-bg); }
+    .legal {
+      position: relative;
+      z-index: 2;
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 3.5rem;
+      font-family: var(--sw-font-body);
+      font-size: 0.72rem;
+      line-height: 1.5;
+      color: var(--sw-ink-soft);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="top"></div>
+  <div id="world"></div>
+  <p class="legal">Coverage availability, limits, pricing, terms, conditions, and exclusions vary by policy and applicant eligibility. StudioGuard materials are for informational purposes only and are not a quote, binder, recommendation, or coverage determination. Licensed insurance professionals handle coverage questions, quoting, and binding.</p>
+  <script src="js/scrub-engine.js"></script>
+  <script>
+    mountScrollWorld(document.getElementById('world'), {
+      brand: { name: 'Stuckey & Company', href: '#top' },
+      cta: { label: 'stuckey.com', href: 'https://stuckey.com' },
+      hint: 'scroll to fly in',
+      diveScroll: 1.5,
+      connScroll: 0.4,
+      crossfade: 0.12,
+      sections: [
+        {
+          id: 'campus', label: 'Stuckey',
+          still: 'assets/campus.webp', clip: 'assets/vid/campus.mp4',
+          accent: '#e3ab4f', scroll: 1.8, linger: 0.4,
+          eyebrow: 'Stuckey & Company',
+          title: 'The floor that runs the company.',
+          body: 'Named specialists, reusable skills, and live tools. One operation for the MGA, CoverCore, and StudioGuard.',
+          tags: ['Est. 1991', '48 states', '29,000 policyholders']
+        },
+        {
+          id: 'council', label: 'Council',
+          still: 'assets/council.webp', clip: 'assets/vid/council.mp4',
+          accent: '#4080a7', linger: 0.3,
+          eyebrow: 'The AI council',
+          title: 'A specialist for every job.',
+          body: 'Cooper flies the company. Casey owns service. Cora owns the number. StudioGuard underwrites. Each desk has an owner, a next action, and a close.',
+          tags: ['One owner', 'One next action', 'Close it']
+        },
+        {
+          id: 'skills', label: 'Skills',
+          still: 'assets/skills.webp', clip: 'assets/vid/skills.mp4',
+          accent: '#0f766e', linger: 0.3,
+          eyebrow: 'Skills and routines',
+          title: 'The work that repeats, written once.',
+          body: 'Hartford quoting, research briefs, HeyGen videos, transcript pulls. A skill is a recipe any assistant can run. A routine is the same work on a clock.',
+          tags: ['Skills', 'Routines', 'Connectors']
+        },
+        {
+          id: 'covercore', label: 'CoverCore',
+          still: 'assets/covercore.webp', clip: 'assets/vid/covercore.mp4',
+          accent: '#059669', linger: 0.3,
+          eyebrow: 'CoverCore + Pulse',
+          title: 'Goals become outcomes.',
+          body: 'CoverCore is the agent operating system for quoting, binding, and managing risk. Pulse is the ops engine underneath. Execution visibility so work actually finishes.',
+          tags: ['Quote', 'Bind', 'See it through']
+        },
+        {
+          id: 'studioguard', label: 'StudioGuard',
+          still: 'assets/studioguard.webp', clip: 'assets/vid/studioguard.mp4',
+          accent: '#e3ab4f', linger: 0.3,
+          eyebrow: 'StudioGuard',
+          title: 'Insurance for how creators actually work.',
+          body: 'Property, professional, cyber, and AI liability, with Accelerant on the paper. The desk helps intake and status. Licensed people still quote and bind.',
+          tags: ['Creators', 'Accelerant', 'Licensed UW']
+        },
+        {
+          id: 'grow', label: 'Grow',
+          still: 'assets/grow.webp', clip: 'assets/vid/grow.mp4',
+          accent: '#e3ab4f', scroll: 1.8, linger: 0.4,
+          eyebrow: 'Independent agencies',
+          title: 'Same stack. More agencies served.',
+          body: 'The tools that run Stuckey are how independent agencies get faster answers and programs that fit.',
+          tags: ['Service', 'Programs', 'Growth'],
+          cta: {
+            primary: { label: 'stuckey.com', href: 'https://stuckey.com' },
+            secondary: { label: 'StudioGuard', href: 'https://stuckey.com/products/studioguard' }
+          }
+        }
+      ],
+      connectors: []
+    });
+  </script>
+</body>
+</html>
